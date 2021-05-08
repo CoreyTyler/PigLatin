@@ -10,12 +10,27 @@ h1 {
   border: solid black;
 }
 
-p {
+.hello {
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
-.textBox {
+.textBoxContainer {
   grid-column: 2/3;
-  text-align: center;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textBox {
+  height: 25px;
+  width: 200px;
+}
+
+.submitButton {
+  height: 30px;
+}
+
+.englishHere {
+  margin-top: 0px;
 }
