@@ -10,7 +10,7 @@ for(let i =0; i < word.length; i++) {
 }
 
 let pigLatin = (word) => {
-    let word = word.toLowerCase().trim();
+    word = word.toLowerCase().trim();
 
     let firstvowel = detectVowel(word)
 
