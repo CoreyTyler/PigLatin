@@ -3,6 +3,7 @@ let detectVowel = (word) => {
 
 for(let i =0; i < word.length; i++) {
     if(vowels.indexOf(word[i]) !== -1) {
+        console.log(i)
         return i;
     }
 }
@@ -23,7 +24,7 @@ let pigLatin = (word) => {
 let translation = () => {
     let inputBox = document.getElementById("inputElement")
 
-    let englishWord = inputBox.nodeValue
+    let englishWord = inputBox.value
 
     let pigWord = pigLatin(englishWord)
 

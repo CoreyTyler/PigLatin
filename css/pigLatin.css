@@ -34,3 +34,8 @@ h1 {
 .englishHere {
   margin-top: 0px;
 }
+
+.display {
+  grid-column: 2/4;
+  grid-row: 4/5;
+}
