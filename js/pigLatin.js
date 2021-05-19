@@ -19,3 +19,15 @@ let pigLatin = (word) => {
     }
     return word + "yay"
 }
+
+let translation = () => {
+    let inputBox = document.getElementById("inputElement")
+
+    let englishWord = inputBox.nodeValue
+
+    let pigWord = pigLatin(englishWord)
+
+    let displayWord = document.getElementById("outputElement")
+
+    displayWord.innerText = pigWord
+}
