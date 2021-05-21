@@ -36,6 +36,6 @@ h1 {
 }
 
 .display {
-  grid-column: 2/4;
+  grid-column: 2/3;
   grid-row: 4/5;
 }
