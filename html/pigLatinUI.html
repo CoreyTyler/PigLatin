@@ -21,8 +21,10 @@
         </p>
     </div>
     <div class="textBoxContainer">
-        <p class="englishHere">Enter English word here:</p>
-        <input type="text" class="textBox" id="inputElement" maxlength="45">
+        <label class="custom-field">
+        <input type="text" class="textBox" id="inputElement" maxlength="45" required/>
+        <span class="placeholder">English word here</span>
+        </label>
         <input type="submit" value="Oink!" class="submitButton" onclick="translation()">
     </div>
     <div class="display">
