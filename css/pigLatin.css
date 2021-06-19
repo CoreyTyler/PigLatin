@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 4px;
+}
+
 #body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -15,6 +22,7 @@
 .hello {
   grid-column: 2/3;
   grid-row: 3/4;
+  letter-spacing: none;
 }
 
 .textBoxContainer {
@@ -75,8 +83,25 @@
   background: #fff;
 }
 
+.buttonContainer {
+  padding-top: 20px;
+}
+
 .submitButton {
-  height: 30px;
+  height: 50px;
+  width: 100px;
+  border: solid black;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+
+.submitButton:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: black;
 }
 
 .englishHere {
@@ -85,7 +110,7 @@
 
 .display {
   grid-column: 2/3;
-  grid-row: 4/5;
+  grid-row: 5/6;
   margin: auto;
   margin-bottom: 0;
 }
