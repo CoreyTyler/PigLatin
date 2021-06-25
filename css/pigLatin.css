@@ -116,7 +116,14 @@
 }
 
 #outputElement {
-  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  position: relative;
+  animation-name: morph;
+  animation-delay: 3s;
+  animation-duration: 3s;
 }
 
 p {
@@ -124,9 +131,36 @@ p {
   font-weight: bold;
 }
 
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 3px solid lightgray;
+  border-top-color: black;
+  animation: spinner 0.7s linear infinite;
+}
+
 .bg-image {
   background-image: url(../images/flying-pig-260nw-646108162.jpg),
     url(../images/flying-pig-illustration-drawing-260nw-1211139319.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: center left, center right;
+}
+
+@keyframes morph {
+  from {
+    letter-spacing: 30px;
+  }
+  to {
+    letter-spacing: 8px;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
 }
