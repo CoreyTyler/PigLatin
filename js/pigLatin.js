@@ -21,10 +21,19 @@ let pigLatin = (word) => {
         "ay";
     }
     return word + "yay";
+}
 
+let audioPig = () => {
+    let mySound = document.getElementById("music");
+
+    mySound.play()
+    console.log("audio playing")
 }
 
 let translation = () => {
+
+    audioPig()
+
     let inputBox = document.getElementById("inputElement")
 
     let englishWord = inputBox.value
@@ -39,10 +48,11 @@ let translation = () => {
     setTimeout(() => {
         document.querySelector(".display").classList.remove("spinner");
         document.querySelector(".display h1").style.display = "block";
-    }, 2000)
+    }, 1000)
 
     displayWord.innerText = pigWord
 }
+
 
 window.addEventListener("keydown", (event) => {
     if(event.key === "Enter") {
