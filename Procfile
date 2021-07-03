@@ -1,1 +1,1 @@
-web: node \PigLatin\html\pigLatinUI.html
+web: node pigLatinUI.html
