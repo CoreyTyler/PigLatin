@@ -1,1 +1,1 @@
-web: node C:\Users\Admin\Desktop\Portfolio Projects\PigLatinGenerator\PigLatin\html\pigLatinUI.html
+web: node \PigLatin\html\pigLatinUI.html
