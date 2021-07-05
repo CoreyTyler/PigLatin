@@ -1,1 +1,1 @@
-web: node pigLatinUI.html
+web:node pigLatinUI.html
