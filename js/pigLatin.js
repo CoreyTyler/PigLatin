@@ -60,3 +60,9 @@ window.addEventListener("keydown", (event) => {
         translation();
     }
 })
+
+let port = process.env.PORT || 5500;
+
+app.listen(port, ()=>{
+    console.log(`App started on port ${port}`)
+})
